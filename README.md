@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0abee463-f48f-47e0-ae4b-78e79751256a)# CAR Island
+# CAR Island
 Car Island is a take on Tashirojima, Japan's website, making it silly and goofy.
 
 # CAR
