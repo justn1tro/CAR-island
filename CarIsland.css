@@ -1,21 +1,41 @@
-* 
+*
 {
   margin: 0;
   font-family: 'Comic Sans MS', Future, sans-serif;
   box-sizing: border-box;
 }
 
-body 
+body
 {
   background: #4bc3ffff;
 }
 
 footer
 {
-  background: #616263;
+  background: #9fa0a1;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
 }
 
-.car 
+.car
 {
-  width: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  align-self: baseline;
+  width: 175px;
+}
+.carReactionText
+{
+  background: red;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  align-self: baseline;
+  width: 175px;
 }
