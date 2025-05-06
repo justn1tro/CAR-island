@@ -27,14 +27,21 @@ footer
   right: 0;
   bottom: 0;
   align-self: baseline;
+  border-radius: 6;
+  border-style: solid;
+  border-color: black;
   width: 175px;
 }
 .carReactionText
 {
+  border-radius: 0.4;
+  border-style: solid;
+  border-color: white;
   background: red;
-  text-align: center;
+  color: white;
   position: fixed;
   right: 0;
+  text-align: center;
   bottom: 0;
   align-self: baseline;
   width: 175px;
