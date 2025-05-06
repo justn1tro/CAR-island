@@ -1,11 +1,16 @@
-* {
+* 
+{
   margin: 0;
   font-family: 'Comic Sans MS', Future, sans-serif;
   box-sizing: border-box;
 }
-body {
+
+body 
+{
   background: #4bc3ffff;
 }
-.car {
+
+.car 
+{
   width: 50px;
 }
