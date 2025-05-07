@@ -19,6 +19,18 @@ footer
   width: 100%;
   color: black;
   text-align: center;
+  padding: 3px;
+}
+
+.footerLinks
+{
+  word-spacing: 15px;
+}
+
+a
+{
+  text-decoration: none;
+  color: black;
 }
 
 .car
@@ -32,6 +44,7 @@ footer
   border-color: black;
   width: 175px;
 }
+
 .carReactionText
 {
   border-radius: 0.4;
