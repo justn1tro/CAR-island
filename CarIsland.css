@@ -59,3 +59,21 @@ a
   align-self: baseline;
   width: 175px;
 }
+/*------Carosuasdisadoaijl -----*/
+#photoGallery {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.carousel-image.active {
+  display: block;
+}
