@@ -26,7 +26,11 @@ footer
 {
   word-spacing: 15px;
 }
-
+p, h1, h2 
+{
+  display:flex;
+  justify-content: center;
+}
 a
 {
   text-decoration: none;
