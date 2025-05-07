@@ -84,9 +84,14 @@ a
 }
 /*------Carosuasdisadoaijl -----*/
 #photoGallery {
+<<<<<<< HEAD
+=======
   position: relative;
+>>>>>>> 64cf73c3839bcc92477ada4860e4a567048275b0
   width: 50%;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .carousel-image {
