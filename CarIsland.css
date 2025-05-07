@@ -31,6 +31,7 @@ p, h1, h2
   display:flex;
   justify-content: center;
 }
+
 a
 {
   text-decoration: none;
@@ -75,8 +76,12 @@ a
   width: 600px;
   object-fit: cover;
   display: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .carousel-image.active {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
