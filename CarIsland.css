@@ -61,9 +61,8 @@ a
 }
 /*------Carosuasdisadoaijl -----*/
 #photoGallery {
-  position: relative;
-  width: 100%;
-  height: 300px;
+  position: center;
+  width: 65%;
   overflow: hidden;
 }
 
