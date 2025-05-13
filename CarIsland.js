@@ -1,5 +1,6 @@
 // Carousel Logic
 let currentImage = 0;
+let carouselTime = 4000;
 const images = document.querySelectorAll('.carousel-image');
 
 function carousel() {
@@ -8,4 +9,4 @@ function carousel() {
   images[currentImage].classList.add('active');
 } //Closing the Carousel function
 
-setInterval(carousel, 5000);
+setInterval(carousel, carouselTime);
