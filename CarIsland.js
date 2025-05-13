@@ -41,7 +41,7 @@ function typeWriter(txt)
   if (i == txt.length)
   {
     typeWriterDone = true;
-    if (clickNum == 3)
+    if (clickNum == 4)
     {
       window.close();
     }
