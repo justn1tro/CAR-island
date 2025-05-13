@@ -89,6 +89,7 @@ a
   border-style: solid;
   border-color: black;
   width: 175px;
+  height: 180px;
 }
 
 .carReactionText
@@ -115,7 +116,7 @@ a
   border-color: white;
   background: red;
   color: white;
-  position: absolute;
+  position: fixed;
   right: 0;
   text-align: center;
   bottom: 0;
