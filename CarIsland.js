@@ -9,16 +9,19 @@ var hasInteractedWithCar = false;
 const car = document.getElementById('carImage');
 const carButton = document.getElementById('carImageButton');
 const carDialogBox = document.querySelector('.carDialogText');
+const explosion = document.querySelector('.explosion');
 // Car Emotions
 const carEmotion = {
   "neutral" : "https://static.wikia.nocookie.net/garn47/images/f/f8/Car_fluff.png/revision/latest/scale-to-width/360?cb=20240810200531",
-  "mad" : "https://static.wikia.nocookie.net/garn47/images/5/5a/Onlyimage.png/revision/latest/scale-to-width/360?cb=20240731011139"
+  "stare" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEZBzo9xhJuyutNoxlwdBaVROSHe_hnurVqg&s",
+  "happy" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6sWFdyt-BiaBsAPQZMOqVqB6-P1AF7XXKEQ&s",
+  "what" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzk4AvzfJZGfYWoJBRIDw2R59aKkwqfHbf-A&s",
+  "mad" : "https://media.tenor.com/d5kqdTCu-ScAAAAM/car-garn47-garn47.gif"
 }
 // Car Dialog Typewriter Effect
 var typeWriterDone = true;
 var i = 0;
-var speed = 50; // The speed/duration of the effect in milliseconds
-
+var speed = 30;
 
 // Carousel Logic
 function carousel()
@@ -30,6 +33,11 @@ function carousel()
 setInterval(carousel, carouselTime);
 
 // Car Logic
+function closeWindow()
+{
+  window.close();
+}
+
 function typeWriter(txt)
 {
   if (i < txt.length)
@@ -43,7 +51,8 @@ function typeWriter(txt)
     typeWriterDone = true;
     if (clickNum == 4)
     {
-      window.close();
+      explosion.classList.add('active');
+      setTimeout(closeWindow, 3000);
     }
   }
 }
@@ -55,6 +64,7 @@ carButton.addEventListener("click", () => {
     typeWriterDone = false;
     carDialog = "Hello! I am Car!";
     hasInteractedWithCar = true;
+    car.src = carEmotion["happy"];
     updateCar();
   }
   else if (clickNum == 1 && typeWriterDone == true)
@@ -62,6 +72,7 @@ carButton.addEventListener("click", () => {
     clickNum++;
     typeWriterDone = false;
     carDialog = "Why are you still clicking on me?";
+    car.src = carEmotion["what"];
     updateCar();
   }
   else if (clickNum == 2 && typeWriterDone == true)
@@ -69,7 +80,7 @@ carButton.addEventListener("click", () => {
     clickNum++;
     typeWriterDone = false;
     carDialog = "Stop it! Or I'll do something you won't like!";
-    car.src = carEmotion["mad"];
+    car.src = carEmotion["stare"];
     updateCar();
   }
   else if (clickNum == 3 && typeWriterDone == true)
@@ -77,6 +88,7 @@ carButton.addEventListener("click", () => {
     clickNum++;
     typeWriterDone = false;
     carDialog = "Fine! You asked for it!";
+    car.src = carEmotion["mad"];
     updateCar();
   }
 });
