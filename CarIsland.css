@@ -124,6 +124,24 @@ a
   align-self: baseline;
   width: 175px;
 }
+
+.explosion
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin-top: -250px;
+  margin-left: -250px;
+  z-index: 1000;
+  display: none;
+}
+
+.explosion.active
+{
+  display: block;
+}
 /*------Carosuasdisadoaijl -----*/
 #photoGallery {
   width: 50%;
